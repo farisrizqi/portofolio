@@ -42,3 +42,4 @@ vercel --prod        # untuk deploy ke production
 - **Warna**: semua warna diatur lewat variabel di baris atas `style.css` (`:root { --paper, --ink, --tarn, --ochre ... }`), tinggal ubah di satu tempat.
 - **Domain sendiri**: di dashboard Vercel → Project → Settings → Domains, tambahkan domain kamu (misalnya farisrizqiawan.com) dan arahkan DNS-nya sesuai instruksi yang muncul.
 # portofolio
+# portofolio
