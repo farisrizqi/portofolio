@@ -3,37 +3,72 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Faris Nur Rizqiawan — Machine Learning &amp; System Automation</title>
-<meta name="description" content="Portofolio Faris Nur Rizqiawan — Fresh Graduate Informatika, Universitas Ahmad Dahlan. Machine Learning, Deep Learning, System Automation, Web Development.">
+<title>FarDev Automation — Faris Nur Rizqiawan | AI Engineer &amp; Automation Specialist</title>
+<meta name="description" content="Portofolio Faris Nur Rizqiawan (FarDev Automation) — AI Engineer & Automation Specialist, Lulusan S1 Informatika Universitas Ahmad Dahlan (IPK 3.86). Workflow Automation (n8n), Agentic AI & MCP, Machine Learning & Deep Learning.">
+<link rel="icon" type="image/png" href="assets/fardev-icon.png">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
+
+<script>
+  (function() {
+    var savedTheme = localStorage.getItem('fnr-theme');
+    var prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+    if (savedTheme === 'dark' || (!savedTheme && prefersDark)) {
+      document.documentElement.setAttribute('data-theme', 'dark');
+    }
+  })();
+</script>
 </head>
 <body>
 
 <div class="grain"></div>
 
+<!-- Fixed Side Architectural Watermark -->
+<div class="site-watermark-rail" aria-hidden="true">
+  <span class="site-watermark-rail__dot"></span>
+  <span>FARDEV AUTOMATION // AI &amp; WORKFLOW ENGINEERING</span>
+</div>
+
 <header class="nav" id="nav">
-  <a href="#top" class="nav__mark">FNR<span class="nav__mark-dot">.</span></a>
-  <nav class="nav__links">
+  <a href="#top" class="nav__brand" aria-label="FarDev Automation — Beranda">
+    <img src="assets/fardev-logo.png" alt="FarDev Automation" class="nav__brand-logo">
+  </a>
+  <nav class="nav__links" id="navLinks">
     <a href="#about">Tentang</a>
+    <a href="#automation">AI &amp; n8n Lab</a>
     <a href="#experience">Pengalaman</a>
-    <a href="#projects">Proyek</a>
+    <a href="#projects">Proyek &amp; Output</a>
     <a href="#skills">Keahlian</a>
+    <a href="#certs">Sertifikasi</a>
     <a href="#contact">Kontak</a>
+    <a href="assets/CV_Faris_Nur_Rizqiawan.pdf" class="nav__cta-mobile" download>Unduh CV (PDF)</a>
   </nav>
-  <a href="assets/CV_Faris_Nur_Rizqiawan.pdf" class="nav__cta" download>Unduh CV</a>
-  <button class="nav__burger" id="burger" aria-label="Buka menu" aria-expanded="false">
-    <span></span><span></span><span></span>
-  </button>
+
+  <div class="nav__actions">
+    <button class="theme-toggle" id="themeToggle" aria-label="Ganti mode tampilan (Terang / Gelap)" title="Ganti mode tampilan">
+      <svg class="theme-icon theme-icon--sun" width="18" height="18" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.8"/><path d="M12 2v2m0 16v2M4.93 4.93l1.41 1.41m11.32 11.32l1.41 1.41M2 12h2m16 0h2M6.34 17.66l-1.41 1.41m14.14-14.14l-1.41 1.41" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+      <svg class="theme-icon theme-icon--moon" width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </button>
+    <a href="assets/CV_Faris_Nur_Rizqiawan.pdf" class="nav__cta" download>Unduh CV</a>
+    <button class="nav__burger" id="burger" aria-label="Buka menu navigasi" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
 </header>
 
 <main id="top">
 
   <!-- ============ HERO ============ -->
   <section class="hero">
+    <!-- Hero Background Giant Watermark -->
+    <div class="hero__watermark" aria-hidden="true">
+      <span>FARDEV</span>
+      <span>AUTOMATION</span>
+    </div>
+
     <div class="hero__contours" aria-hidden="true">
       <svg viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice">
         <path class="contour c1" d="M-100,650 C200,600 300,700 550,660 C800,620 900,720 1150,670 C1350,630 1500,700 1700,650"/>
@@ -44,34 +79,66 @@
       </svg>
     </div>
 
-    <div class="hero__inner">
-      <p class="eyebrow">Fresh Graduate Informatika — Universitas Ahmad Dahlan</p>
-      <h1 class="hero__title">Faris Nur<br>Rizqiawan</h1>
-      <p class="hero__role">Machine Learning &amp; Deep Learning <span class="hero__role-sep">/</span> System Automation <span class="hero__role-sep">/</span> Web Development</p>
-      <p class="hero__lede">Mengubah data mentah — iklim, perilaku pengguna, teks — menjadi sistem yang bekerja: model prediksi, pipeline otomasi, dan produk digital yang bisa dipakai orang banyak.</p>
+    <div class="hero__layout">
+      <div class="hero__inner">
+        <div class="hero__status">
+          <span class="status-pulse"></span>
+          <span>FarDev Automation · Open for AI &amp; Automation Roles</span>
+        </div>
 
-      <div class="hero__actions">
-        <a href="#contact" class="btn btn--primary">Hubungi Saya</a>
-        <a href="#projects" class="btn btn--ghost">Lihat Proyek</a>
+        <p class="eyebrow">S1 Informatika — Universitas Ahmad Dahlan (IPK 3.86)</p>
+        <h1 class="hero__title">Faris Nur<br>Rizqiawan</h1>
+        <p class="hero__role">
+          <strong>AI Engineer &amp; Automation Specialist</strong>
+          <span class="hero__role-sep">·</span> n8n &amp; Multi-SaaS API
+          <span class="hero__role-sep">·</span> Agentic AI &amp; MCP
+          <span class="hero__role-sep">·</span> Machine Learning &amp; Deep Learning
+        </p>
+        <p class="hero__lede">Membangun ekosistem otomasi tingkat lanjut menggunakan <strong>n8n (self-hosted)</strong>, mengorkestrasi <strong>Agentic AI &amp; Model Context Protocol (MCP)</strong> melalui OpenRouter/Hermes, mengintegrasikan REST API multi-SaaS (Kledo, Odoo, Zenoti, Mekari, GCP, GOWA), serta merancang model <strong>Deep Learning</strong> yang terukur.</p>
+
+        <div class="hero__actions">
+          <a href="#automation" class="btn btn--primary">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            Simulasi AI &amp; n8n Workflow
+          </a>
+          <a href="#projects" class="btn btn--ghost">Lihat Proyek &amp; Output</a>
+        </div>
+
+        <div class="hero__meta">
+          <a href="https://www.google.com/maps/search/?api=1&query=Wirobrajan,+Yogyakarta" target="_blank" rel="noopener" class="chip">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M12 21s7-6.5 7-12a7 7 0 10-14 0c0 5.5 7 12 7 12z" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="9" r="2.4" stroke="currentColor" stroke-width="1.6"/></svg>
+            Wirobrajan, Yogyakarta
+          </a>
+          <button type="button" class="chip chip--copy" data-copy="farisnur07@gmail.com" title="Klik untuk salin email">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><rect x="3" y="5" width="18" height="14" rx="2" stroke="currentColor" stroke-width="1.6"/><path d="M3.5 6.5l8.5 6 8.5-6" stroke="currentColor" stroke-width="1.6"/></svg>
+            <span>farisnur07@gmail.com</span>
+            <span class="copy-badge">Salin</span>
+          </button>
+          <button type="button" class="chip chip--copy" data-copy="+6289506982507" title="Klik untuk salin nomor WhatsApp">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z" stroke="currentColor" stroke-width="1.6"/></svg>
+            <span>+62 895-0698-2507</span>
+            <span class="copy-badge">Salin</span>
+          </button>
+          <a href="https://www.linkedin.com/in/farisrizqiawan07/" target="_blank" rel="noopener" class="chip">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="18" rx="3" stroke="currentColor" stroke-width="1.6"/><path d="M8 10.5v5.5M8 7.8v.01M12 16v-3.2c0-1.3.9-2.2 2-2.2s2 .9 2 2.2V16" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+            LinkedIn
+          </a>
+          <a href="https://github.com/farisrizqi" target="_blank" rel="noopener" class="chip">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M12 2C6.5 2 2 6.6 2 12.2c0 4.5 2.9 8.3 6.8 9.6.5.1.7-.2.7-.5v-1.9c-2.8.6-3.4-1.4-3.4-1.4-.4-1.1-1.1-1.4-1.1-1.4-.9-.6.1-.6.1-.6 1 .1 1.5 1.1 1.5 1.1.9 1.5 2.3 1.1 2.8.8.1-.7.3-1.1.6-1.4-2.2-.3-4.6-1.1-4.6-5 0-1.1.4-2 1-2.7-.1-.3-.5-1.3.1-2.7 0 0 .8-.3 2.8 1a9.6 9.6 0 015.1 0c2-1.3 2.8-1 2.8-1 .6 1.4.2 2.4.1 2.7.6.7 1 1.6 1 2.7 0 3.9-2.4 4.7-4.6 5 .3.3.6.9.6 1.8v2.6c0 .3.2.6.7.5 3.9-1.3 6.8-5.1 6.8-9.6C22 6.6 17.5 2 12 2z" fill="currentColor"/></svg>
+            GitHub
+          </a>
+        </div>
       </div>
 
-      <div class="hero__meta">
-        <a href="https://www.google.com/maps/search/?api=1&query=Wirobrajan,+Yogyakarta" target="_blank" rel="noopener" class="chip">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M12 21s7-6.5 7-12a7 7 0 10-14 0c0 5.5 7 12 7 12z" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="9" r="2.4" stroke="currentColor" stroke-width="1.6"/></svg>
-          Wirobrajan, Yogyakarta
-        </a>
-        <a href="mailto:farisnur07@gmail.com" class="chip">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><rect x="3" y="5" width="18" height="14" rx="2" stroke="currentColor" stroke-width="1.6"/><path d="M3.5 6.5l8.5 6 8.5-6" stroke="currentColor" stroke-width="1.6"/></svg>
-          farisnur07@gmail.com
-        </a>
-        <a href="https://www.linkedin.com/in/farisrizqiawan07/" target="_blank" rel="noopener" class="chip">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="18" rx="3" stroke="currentColor" stroke-width="1.6"/><path d="M8 10.5v5.5M8 7.8v.01M12 16v-3.2c0-1.3.9-2.2 2-2.2s2 .9 2 2.2V16" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
-          LinkedIn
-        </a>
-        <a href="https://github.com/farisrizqi" target="_blank" rel="noopener" class="chip">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M12 2C6.5 2 2 6.6 2 12.2c0 4.5 2.9 8.3 6.8 9.6.5.1.7-.2.7-.5v-1.9c-2.8.6-3.4-1.4-3.4-1.4-.4-1.1-1.1-1.4-1.1-1.4-.9-.6.1-.6.1-.6 1 .1 1.5 1.1 1.5 1.1.9 1.5 2.3 1.1 2.8.8.1-.7.3-1.1.6-1.4-2.2-.3-4.6-1.1-4.6-5 0-1.1.4-2 1-2.7-.1-.3-.5-1.3.1-2.7 0 0 .8-.3 2.8 1a9.6 9.6 0 015.1 0c2-1.3 2.8-1 2.8-1 .6 1.4.2 2.4.1 2.7.6.7 1 1.6 1 2.7 0 3.9-2.4 4.7-4.6 5 .3.3.6.9.6 1.8v2.6c0 .3.2.6.7.5 3.9-1.3 6.8-5.1 6.8-9.6C22 6.6 17.5 2 12 2z" fill="currentColor"/></svg>
-          GitHub
-        </a>
+      <!-- Hero Brand Emblem Seal Card -->
+      <div class="hero__brand-seal">
+        <div class="brand-seal-card">
+          <img src="assets/fardev-logo.png" alt="FarDev Automation Official Emblem" class="brand-seal-card__img">
+          <div class="brand-seal-card__meta">
+            <span>IDENTITY MARK // VERIFIED</span>
+            <strong>FarDev Automation Lab</strong>
+          </div>
+        </div>
       </div>
     </div>
 
@@ -116,71 +183,298 @@
     </svg>
   </div>
 
-  <!-- ============ ABOUT ============ -->
+  <!-- ============ 01. ABOUT ============ -->
   <section class="section about" id="about">
     <div class="section__head">
       <span class="section__num">01</span>
-      <h2 class="section__title">Tentang</h2>
+      <h2 class="section__title">Tentang Saya</h2>
     </div>
 
     <div class="about__grid">
       <div class="about__photo">
         <div class="about__photo-ring">
-          <img src="assets/profile.jpg" alt="Foto Faris Nur Rizqiawan">
+          <img src="assets/profile.jpg" alt="Foto Profil Faris Nur Rizqiawan" loading="lazy">
+          <div class="about__watermark-badge" title="FarDev Automation">
+            <img src="assets/fardev-icon.png" alt="">
+            <span>FarDev Automation</span>
+          </div>
         </div>
         <p class="about__quote">&ldquo;Sesungguhnya bersama kesulitan ada kemudahan.&rdquo;</p>
       </div>
 
       <div class="about__body">
-        <p>Lulusan baru Program Studi Informatika, Universitas Ahmad Dahlan, dengan ketertarikan yang bermula dari rasa penasaran dan kini tumbuh menjadi motivasi nyata untuk membangun sistem berbasis data. Meyakini kedisiplinan sebagai pondasi utama, dan aktif berorganisasi sejak SMA hingga kuliah — membentuk kebiasaan komunikasi formal dan kolaborasi tim yang terbawa ke setiap proyek.</p>
-        <p>Pengalaman kerja dan proyek kuliahnya bergerak di tiga jalur yang saling terhubung: <strong>machine learning &amp; deep learning</strong> untuk masalah nyata (prediksi banjir, rekomendasi wisata), <strong>otomasi sistem</strong> untuk efisiensi operasional (n8n, WhatsApp Business automation), dan <strong>pengembangan web</strong> untuk membungkusnya menjadi produk yang bisa dipakai.</p>
+        <p>Lulusan S1 Informatika dari <strong>Universitas Ahmad Dahlan (IPK 3.86)</strong> yang berfokus sebagai <strong>AI Engineer &amp; Automation Specialist</strong>, dengan pengalaman langsung membangun model <em>machine learning</em> dan <em>deep learning</em> serta memproses data dengan pendekatan yang disiplin dan teliti.</p>
+        <p>Berpengalaman dalam otomasi alur kerja tingkat lanjut menggunakan <strong>n8n</strong> (integrasi REST API &amp; Webhook, otomasi multi-SaaS, <em>self-hosted deployment</em>) serta sistem <strong>Agentic AI</strong> (AI Agent, Model Context Protocol / MCP bawaan maupun custom, connector, dan <em>routing logic</em>) untuk menghadirkan solusi otomasi yang skalabel dan berbasis data. Komunikator dan rekan kerja yang kuat, terbentuk melalui keterlibatan aktif dalam organisasi dan proyek kolaboratif.</p>
 
         <div class="about__facts">
           <div class="fact">
             <span class="fact__value">3.86</span>
-            <span class="fact__label">IPK Kumulatif</span>
+            <span class="fact__label">IPK S1 Informatika UAD (2022–2026)</span>
           </div>
           <div class="fact">
-            <span class="fact__value">2022–26</span>
-            <span class="fact__label">Univ. Ahmad Dahlan</span>
+            <span class="fact__value">5+ SaaS</span>
+            <span class="fact__label">Kledo, Odoo, Zenoti, Mekari, GCP</span>
+          </div>
+          <div class="fact">
+            <span class="fact__value">Agentic</span>
+            <span class="fact__label">n8n · MCP · OpenRouter · Hermes</span>
+          </div>
+          <div class="fact">
+            <span class="fact__value">SMAN 2</span>
+            <span class="fact__label">SMA Negeri 2 Yogyakarta (2019–2022)</span>
           </div>
         </div>
 
-        <div class="about__langs">
-          <span class="lang-chip">Bahasa Indonesia <em>— aktif</em></span>
-          <span class="lang-chip">Bahasa Jawa <em>— aktif</em></span>
-          <span class="lang-chip">Bahasa Inggris <em>— intermediate</em></span>
+        <div class="about__meta-groups">
+          <div>
+            <span class="meta-group-label">Bahasa</span>
+            <div class="about__langs">
+              <span class="lang-chip">Bahasa Indonesia <em>— Aktif</em></span>
+              <span class="lang-chip">Bahasa Inggris <em>— Pasif</em></span>
+            </div>
+          </div>
+          <div>
+            <span class="meta-group-label">Minat</span>
+            <div class="about__langs">
+              <span class="lang-chip">🎵 Mendengarkan Musik</span>
+              <span class="lang-chip">🎸 Bermain Gitar</span>
+              <span class="lang-chip">✈️ Traveling</span>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ============ EXPERIENCE ============ -->
+  <!-- ============ 02. AI AUTOMATION & AGENTIC WORKFLOW LAB ============ -->
+  <section class="section automation-lab" id="automation">
+    <div class="section__head section__head--split">
+      <div>
+        <span class="section__num">02</span>
+        <h2 class="section__title">AI Automation &amp; Agentic Architecture</h2>
+      </div>
+      <span class="lab-badge">
+        <span class="status-pulse"></span>
+        FarDev Automation · n8n &amp; MCP Simulator
+      </span>
+    </div>
+
+    <p class="section__subtitle">
+      Karena banyak sistem otomasi enterprise berjalan di server internal klien (<em>self-hosted n8n</em> &amp; kredensial API privat), bagian interaktif ini mendemonstrasikan <strong>arsitektur produksi nyata</strong>, <strong>aliran payload API/Webhook</strong>, dan <strong>contoh output</strong> yang telah saya bangun.
+    </p>
+
+    <!-- Blueprint Selector Tabs -->
+    <div class="workflow-tabs" id="workflowTabs" role="tablist">
+      <button class="wf-tab is-active" data-wf="erp" role="tab">
+        <span class="wf-tab__num">Blueprint 01</span>
+        <span class="wf-tab__title">Multi-SaaS ERP &amp; AI Reporting</span>
+        <span class="wf-tab__meta">Kledo · Odoo · Zenoti · Mekari · OpenRouter</span>
+      </button>
+      <button class="wf-tab" data-wf="chatbot" role="tab">
+        <span class="wf-tab__num">Blueprint 02</span>
+        <span class="wf-tab__title">Agentic AI Chatbot &amp; MCP</span>
+        <span class="wf-tab__meta">n8n Self-Hosted · Webhook · Custom MCP</span>
+      </button>
+      <button class="wf-tab" data-wf="gowa" role="tab">
+        <span class="wf-tab__num">Blueprint 03</span>
+        <span class="wf-tab__title">GOWA WhatsApp &amp; Kledo Web App</span>
+        <span class="wf-tab__meta">Cloudflare Workers · GOWA · Kledo API</span>
+      </button>
+    </div>
+
+    <!-- Interactive Canvas -->
+    <div class="wf-canvas" id="wfCanvas">
+      <div class="wf-canvas__topbar">
+        <div class="wf-canvas__dots">
+          <span></span><span></span><span></span>
+          <strong id="wfCanvasTitle">n8n-production // multi-saas-agentic-pipeline.json</strong>
+        </div>
+        <div class="wf-canvas__controls">
+          <span class="wf-status-pill" id="wfStatusPill">Status: Ready</span>
+          <button type="button" class="wf-run-btn" id="wfRunBtn">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+            <span>Jalankan Simulasi Workflow</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Node Flow Diagram -->
+      <div class="wf-nodes-wrap">
+        <!-- Canvas Background Watermark -->
+        <div class="wf-canvas-watermark" aria-hidden="true">FARDEV AUTOMATION</div>
+        <div class="wf-stamp-badge" aria-hidden="true">
+          <img src="assets/fardev-icon.png" alt="">
+          <span>FarDev Automation Blueprint</span>
+        </div>
+
+        <div class="wf-nodes" id="wfNodes">
+          <div class="wf-node" data-step="1">
+            <div class="wf-node__header">
+              <span class="wf-node__badge">TRIGGER</span>
+              <span class="wf-node__time">0ms</span>
+            </div>
+            <div class="wf-node__title" id="node1Title">Webhook &amp; Cron Scheduler</div>
+            <div class="wf-node__desc" id="node1Desc">Menerima event real-time &amp; penjadwalan penarikan data operasional klien</div>
+          </div>
+
+          <div class="wf-arrow">
+            <svg viewBox="0 0 40 16" fill="none"><path d="M0 8h36M30 2l6 6-6 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+
+          <div class="wf-node" data-step="2">
+            <div class="wf-node__header">
+              <span class="wf-node__badge">REST API</span>
+              <span class="wf-node__time">180ms</span>
+            </div>
+            <div class="wf-node__title" id="node2Title">Multi-SaaS Connectors</div>
+            <div class="wf-node__desc" id="node2Desc">Integrasi API Kledo, Odoo, Zenoti, Mekari &amp; Google Cloud Platform (GCP)</div>
+          </div>
+
+          <div class="wf-arrow">
+            <svg viewBox="0 0 40 16" fill="none"><path d="M0 8h36M30 2l6 6-6 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+
+          <div class="wf-node" data-step="3">
+            <div class="wf-node__header">
+              <span class="wf-node__badge">MCP &amp; ROUTER</span>
+              <span class="wf-node__time">310ms</span>
+            </div>
+            <div class="wf-node__title" id="node3Title">Agentic AI &amp; Custom MCP</div>
+            <div class="wf-node__desc" id="node3Desc">Routing logic, skill, pre-built &amp; custom MCP untuk konteks data lintas sistem</div>
+          </div>
+
+          <div class="wf-arrow">
+            <svg viewBox="0 0 40 16" fill="none"><path d="M0 8h36M30 2l6 6-6 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+
+          <div class="wf-node" data-step="4">
+            <div class="wf-node__header">
+              <span class="wf-node__badge">LLM ENGINE</span>
+              <span class="wf-node__time">640ms</span>
+            </div>
+            <div class="wf-node__title" id="node4Title">OpenRouter (Hermes Model)</div>
+            <div class="wf-node__desc" id="node4Desc">Orkestrasi token &amp; reasoning model AI untuk sintesis insight dan keputusan</div>
+          </div>
+
+          <div class="wf-arrow">
+            <svg viewBox="0 0 40 16" fill="none"><path d="M0 8h36M30 2l6 6-6 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+
+          <div class="wf-node" data-step="5">
+            <div class="wf-node__header">
+              <span class="wf-node__badge">DISPATCH</span>
+              <span class="wf-node__time">820ms</span>
+            </div>
+            <div class="wf-node__title" id="node5Title">WhatsApp (GOWA) &amp; Email</div>
+            <div class="wf-node__desc" id="node5Desc">Pengiriman laporan otomatis &amp; notifikasi interaktif langsung ke stakeholder</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Dual Pane Output Inspector -->
+      <div class="wf-inspector">
+        <div class="wf-pane wf-pane--code">
+          <div class="wf-pane__head">
+            <span>Payload &amp; MCP Execution Trace (JSON)</span>
+            <span class="wf-pane__tag" id="wfCodeTag">200 OK · FarDev Automation</span>
+          </div>
+          <pre class="wf-code" id="wfCodeOutput"><code>{
+  "workflow": "enterprise-multi-saas-sync",
+  "engine": "n8n-self-hosted v1.x",
+  "connectors_active": ["Kledo_API", "Odoo_RPC", "Zenoti_REST", "Mekari_Auth", "GCP_BigQuery"],
+  "agentic_layer": {
+    "orchestrator": "OpenRouter",
+    "model": "nousresearch/hermes-3-llama-3.1",
+    "mcp_tools_called": ["fetch_kledo_invoices", "sync_odoo_inventory", "analyze_daily_revenue"],
+    "token_usage": { "prompt": 612, "completion": 284, "latency_ms": 640 }
+  },
+  "dispatch_status": {
+    "whatsapp_gowa": "SENT (200 OK)",
+    "email_smtp": "DELIVERED"
+  }
+}</code></pre>
+        </div>
+
+        <div class="wf-pane wf-pane--preview">
+          <div class="wf-pane__head">
+            <span>Contoh Output Aktual ke Pengguna / Klien</span>
+            <span class="wf-pane__tag" id="wfPreviewTag">WhatsApp &amp; Email Dispatch</span>
+          </div>
+          <div class="wf-preview-body" id="wfVisualOutput">
+            <div class="wa-mock">
+              <div class="wa-mock__header">
+                <span class="wa-mock__avatar">AI</span>
+                <div>
+                  <strong>Enterprise AI Assistant (via GOWA)</strong>
+                  <span>Online · FarDev Automation Report</span>
+                </div>
+              </div>
+              <div class="wa-mock__bubble">
+                <p>📊 <strong>RINGKASAN EKSEKUTIF HARIAN (AUTO-SYNC)</strong></p>
+                <p>Halo Tim Manajemen, berikut hasil sinkronisasi otomatis dari <strong>Kledo, Odoo &amp; Zenoti</strong> hari ini:</p>
+                <ul>
+                  <li>✅ <strong>Kledo Finance:</strong> 42 Invoice terverifikasi (Rp 68.450.000)</li>
+                  <li>📦 <strong>Odoo Inventory:</strong> 3 SKU perlu restock segera</li>
+                  <li>👥 <strong>Zenoti &amp; Mekari:</strong> 128 transaksi cabang tersinkronisasi ke GCP</li>
+                </ul>
+                <p class="wa-mock__insight">💡 <em>AI Insight (Hermes): Pendapatan naik +14.2% dibanding rata-rata minggu lalu. Laporan PDF lengkap telah dikirim ke email direksi.</em></p>
+                <span class="wa-mock__time">17:00 WIB · ✓✓ Terkirim via n8n + GOWA</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 03. EXPERIENCE ============ -->
   <section class="section experience" id="experience">
     <div class="section__head">
-      <span class="section__num">02</span>
+      <span class="section__num">03</span>
       <h2 class="section__title">Pengalaman Kerja</h2>
     </div>
 
     <div class="timeline">
 
       <article class="tl-item">
-        <div class="tl-item__time">Jun 2025 — Sekarang</div>
+        <div class="tl-item__time">Nov 2025 — Okt 2026</div>
         <div class="tl-item__dot"></div>
         <div class="tl-item__body">
-          <h3>Web Administrator &amp; Developer</h3>
-          <p class="tl-item__org">Yayasan Haadii Nurul Ikhlas</p>
-          <p>Mengelola dan memelihara situs yhniyogya.or.id, termasuk merancang dan membangun fitur baru untuk mendukung kebutuhan operasional yayasan sehari-hari.</p>
+          <div class="tl-item__header">
+            <h3>AI Prompter Trainer &amp; AI Automation</h3>
+            <span class="tl-item__badge">Full-Stack Automation &amp; Agentic AI</span>
+          </div>
+          <p class="tl-item__org">PT Aksoro Sabda Nusantara</p>
+          <ul class="tl-item__list">
+            <li>Menyelesaikan proyek otomasi skala besar yang mencakup pengembangan sistem <em>automation</em> terintegrasi dengan berbagai API eksternal (<strong>Kledo, Odoo, Zenoti, Mekari</strong>, dan platform relevan lainnya, termasuk <strong>Google Cloud Platform / GCP</strong>).</li>
+            <li>Melakukan <em>on-boarding</em> langsung dengan klien untuk menggali kebutuhan data, kemudian mengembangkan sistem otomasi termasuk komponen AI yang terhubung ke <strong>WhatsApp</strong> dan <strong>email</strong>.</li>
+            <li>Mengelola sistem <strong>Agentic AI</strong> untuk kebutuhan operasional harian, meliputi konfigurasi <em>connector</em>, <em>skill</em>, serta integrasi <strong>MCP (Model Context Protocol)</strong> baik yang bawaan (<em>pre-built</em>), <em>custom</em>, maupun melalui API.</li>
+            <li>Mengorkestrasi model AI melalui <strong>OpenRouter</strong> (termasuk model <strong>Hermes</strong>) untuk konektivitas model yang rapi dan efisien pada sistem Agentic AI.</li>
+            <li>Mengembangkan aplikasi web sederhana (<em>vibe coding</em>) yang terintegrasi dengan <strong>API Kledo</strong> untuk mendukung kebutuhan operasional klien.</li>
+          </ul>
+          <div class="tl-item__tags">
+            <span>n8n</span><span>Agentic AI</span><span>MCP</span><span>OpenRouter (Hermes)</span><span>Kledo API</span><span>Odoo</span><span>Zenoti</span><span>Mekari</span><span>GCP</span>
+          </div>
         </div>
       </article>
 
       <article class="tl-item">
-        <div class="tl-item__time">Agu — Des 2025</div>
+        <div class="tl-item__time">Jun 2025 — Sep 2026</div>
         <div class="tl-item__dot"></div>
         <div class="tl-item__body">
-          <h3>Intern AI Trainer &amp; System Automation</h3>
-          <p class="tl-item__org">PT Aksoro Sabda Nusantara</p>
-          <p>Menganalisis kebutuhan klien, melakukan prompt engineering dan training AI, serta membangun pipeline otomasi n8n dengan output WhatsApp Business Automation.</p>
+          <div class="tl-item__header">
+            <h3>Administrator &amp; Pengembang Web</h3>
+            <span class="tl-item__badge">Web &amp; AI Chatbot</span>
+          </div>
+          <p class="tl-item__org">Yayasan Haadii Nurul Ikhlas (yhniyogya.or.id)</p>
+          <ul class="tl-item__list">
+            <li>Mengelola dan memelihara situs web resmi yayasan (<strong>yhniyogya.or.id</strong>), termasuk pengembangan fitur sesuai kebutuhan operasional.</li>
+            <li>Mengembangkan dan meluncurkan fitur <strong>chatbot berbasis AI Agent</strong> yang terintegrasi dengan <strong>n8n (self-hosted)</strong> untuk menjawab pertanyaan pengunjung secara otomatis.</li>
+            <li>Mengimplementasikan integrasi <strong>webhook &amp; REST API</strong> untuk menghubungkan fitur chatbot dengan <em>automation pipeline</em> n8n.</li>
+          </ul>
+          <div class="tl-item__tags">
+            <span>n8n Self-Hosted</span><span>AI Agent Chatbot</span><span>Webhook &amp; API</span><span>Web Administration</span>
+          </div>
         </div>
       </article>
 
@@ -188,78 +482,128 @@
         <div class="tl-item__time">Feb — Jun 2025</div>
         <div class="tl-item__dot"></div>
         <div class="tl-item__body">
-          <h3>System Analyst</h3>
-          <p class="tl-item__org">Tim Developer UpToSky Digital</p>
-          <p>Merancang arsitektur sistem, alur mekanisme, dan ERD basis data, serta menyusun dokumentasi teknis sebagai acuan pengembangan tim.</p>
+          <div class="tl-item__header">
+            <h3>Analis Sistem (System Analyst)</h3>
+          </div>
+          <p class="tl-item__org">UpToSky Digital Development Team</p>
+          <ul class="tl-item__list">
+            <li>Merancang arsitektur sistem, alur proses, dan <em>Entity Relationship Diagram</em> (ERD) basis data.</li>
+            <li>Menyusun dokumentasi teknis sebagai acuan bagi tim pengembang.</li>
+            <li>Menghubungkan komunikasi antara klien dan tim <em>developer</em> agar spesifikasi produk tepat sasaran.</li>
+          </ul>
+          <div class="tl-item__tags">
+            <span>System Architecture</span><span>ERD &amp; Database Design</span><span>Technical Documentation</span>
+          </div>
         </div>
       </article>
 
       <article class="tl-item">
-        <div class="tl-item__time">Genap 2024/2025</div>
+        <div class="tl-item__time">Semester Genap 2024/2025</div>
         <div class="tl-item__dot"></div>
         <div class="tl-item__body">
-          <h3>Peserta Coding Camp DBS Foundation — Path Machine Learning</h3>
-          <p class="tl-item__org">DBS Foundation</p>
-          <p>Menguasai modul machine learning secara bertahap dan mengimplementasikannya dalam proyek capstone kelompok berupa sistem rekomendasi wisata "TripTaktik".</p>
+          <div class="tl-item__header">
+            <h3>Peserta, DBS Foundation Coding Camp: Machine Learning Track</h3>
+          </div>
+          <p class="tl-item__org">DBS Foundation &amp; Dicoding</p>
+          <ul class="tl-item__list">
+            <li>Secara bertahap menguasai modul Machine Learning end-to-end dan menerapkannya dalam proyek akhir kelompok: sistem rekomendasi pariwisata <strong>&ldquo;TripTaktik&rdquo;</strong>.</li>
+          </ul>
         </div>
       </article>
 
       <article class="tl-item">
-        <div class="tl-item__time">Genap 2023/2024</div>
+        <div class="tl-item__time">Semester Genap 2023/2024</div>
         <div class="tl-item__dot"></div>
         <div class="tl-item__body">
-          <h3>Asisten Praktikum Matematika Diskrit</h3>
+          <h3>Asisten Laboratorium Matematika Diskrit</h3>
           <p class="tl-item__org">Universitas Ahmad Dahlan</p>
+          <ul class="tl-item__list">
+            <li>Mendampingi mahasiswa dalam pelaksanaan praktikum, menjelaskan konsep dan latihan soal matematika diskrit, serta memeriksa dan menilai tugas praktikum.</li>
+          </ul>
         </div>
       </article>
 
       <article class="tl-item">
-        <div class="tl-item__time">Ganjil 2023/2024</div>
+        <div class="tl-item__time">Semester Ganjil 2023/2024</div>
         <div class="tl-item__dot"></div>
         <div class="tl-item__body">
-          <h3>Asisten Praktikum Logika Informatika</h3>
+          <h3>Asisten Laboratorium Logika Informatika</h3>
           <p class="tl-item__org">Universitas Ahmad Dahlan</p>
+          <ul class="tl-item__list">
+            <li>Memandu sesi praktikum logika informatika, membantu mahasiswa memahami materi melalui studi kasus, serta menilai laporan dan tugas praktikum.</li>
+          </ul>
         </div>
       </article>
 
     </div>
   </section>
 
-  <!-- ============ PROJECTS ============ -->
+  <!-- ============ 04. PROJECTS & OUTPUT SHOWCASE ============ -->
   <section class="section projects" id="projects">
     <div class="section__head section__head--split">
       <div>
-        <span class="section__num">03</span>
-        <h2 class="section__title">Proyek Unggulan</h2>
+        <span class="section__num">04</span>
+        <h2 class="section__title">Proyek Terbaru &amp; Contoh Output</h2>
       </div>
       <a href="https://github.com/farisrizqi" target="_blank" rel="noopener" class="section__link">
-        Lihat semua di GitHub
+        Lihat 23+ Repo di GitHub
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M7 17L17 7M17 7H8M17 7v9" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </a>
     </div>
 
+    <!-- Filter Tab Buttons -->
+    <div class="project-filters" id="projectFilters" role="tablist" aria-label="Filter Kategori Proyek">
+      <button class="filter-btn is-active" data-filter="all">Semua Proyek</button>
+      <button class="filter-btn" data-filter="automation">AI Automation &amp; GOWA</button>
+      <button class="filter-btn" data-filter="ml">Machine Learning &amp; Deep Learning</button>
+      <button class="filter-btn" data-filter="web">Web &amp; Visualisasi Data</button>
+    </div>
+
     <div class="cards">
 
-      <article class="card">
+      <!-- PROJECT 1: TODO-WA (GOWA AUTOMATION) -->
+      <article class="card" data-category="automation">
         <div class="card__top">
           <div class="card__icon">
-            <svg viewBox="0 0 48 48" fill="none"><path d="M4,30 C10,26 14,32 20,28 C26,24 30,30 36,26 C39,24 42,25 44,24" stroke="currentColor" stroke-width="1.6"/><path d="M4,36 C10,32 14,38 20,34 C26,30 30,36 36,32 C39,30 42,31 44,30" stroke="currentColor" stroke-width="1.6"/><path d="M18 12l4-6 4 6M22 6v14" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+            <svg viewBox="0 0 48 48" fill="none"><path d="M8 24C8 15.163 15.163 8 24 8C32.837 8 40 15.163 40 24C40 32.837 32.837 40 24 40C20.89 40 17.98 39.117 15.5 37.59L8 40L10.41 32.5C8.883 30.02 8 27.11 8 24Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M17 24.5L21.5 29L31 19.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </div>
-          <a href="https://github.com/farisrizqi/flood-risk-prediction" target="_blank" rel="noopener" class="card__repo-link" aria-label="Buka repository di GitHub">
+          <a href="https://github.com/farisrizqi/todo-wa" target="_blank" rel="noopener" class="card__repo-link" aria-label="Buka repository di GitHub">
             <svg width="17" height="17" viewBox="0 0 24 24" fill="none"><path d="M12 2C6.5 2 2 6.6 2 12.2c0 4.5 2.9 8.3 6.8 9.6.5.1.7-.2.7-.5v-1.9c-2.8.6-3.4-1.4-3.4-1.4-.4-1.1-1.1-1.4-1.1-1.4-.9-.6.1-.6.1-.6 1 .1 1.5 1.1 1.5 1.1.9 1.5 2.3 1.1 2.8.8.1-.7.3-1.1.6-1.4-2.2-.3-4.6-1.1-4.6-5 0-1.1.4-2 1-2.7-.1-.3-.5-1.3.1-2.7 0 0 .8-.3 2.8 1a9.6 9.6 0 015.1 0c2-1.3 2.8-1 2.8-1 .6 1.4.2 2.4.1 2.7.6.7 1 1.6 1 2.7 0 3.9-2.4 4.7-4.6 5 .3.3.6.9.6 1.8v2.6c0 .3.2.6.7.5 3.9-1.3 6.8-5.1 6.8-9.6C22 6.6 17.5 2 12 2z" fill="currentColor"/></svg>
           </a>
         </div>
-        <h3>Prediksi Risiko Banjir dengan Deep Learning</h3>
-        <p>Model prediksi banjir berbasis <strong>LSTM</strong> untuk 88 desa, dibangun dari fusi data iklim <strong>Google Earth Engine</strong> dan ekstraksi topografi spasial menggunakan <strong>QGIS</strong>.</p>
-        <div class="card__tags">
-          <span>LSTM</span><span>Google Earth Engine</span><span>QGIS</span>
+        <div class="card__badge">GOWA Self-Hosted · Cloudflare Workers · Live</div>
+        <h3>To Do List &amp; Reminder Otomatis (GOWA Automation)</h3>
+        <p>Aplikasi web <em>to-do list</em> yang mengingatkan pengguna secara otomatis lewat WhatsApp menggunakan <strong>GOWA Automation (self-hosted)</strong>, sehingga tidak ada tugas penting yang terlewat. Telah di-deploy di <strong>Cloudflare Workers &amp; Pages</strong> dengan database <strong>Supabase</strong> dan digunakan secara nyata oleh klien/pengguna.</p>
+
+        <!-- Embedded Output Preview -->
+        <div class="output-preview">
+          <div class="output-preview__bar">
+            <span class="output-dot output-dot--green"></span>
+            <span>Contoh Output: Notifikasi GOWA WhatsApp</span>
+            <span class="output-preview__wm">FarDev Automation</span>
+          </div>
+          <div class="output-preview__content">
+            <div class="mini-wa">
+              <strong>🤖 GOWA Reminder Bot</strong>
+              <p>⏰ <em>Halo Faris! Tugas <b>&ldquo;Deploy Webhook API Kledo&rdquo;</b> jatuh tempo pukul 19:00 WIB. Balas <b>DONE</b> untuk menyelesaikan.</em></p>
+              <span class="mini-wa__meta">Delivered via Cloudflare Worker Cron · 200 OK</span>
+            </div>
+          </div>
         </div>
-        <a href="https://github.com/farisrizqi/flood-risk-prediction" target="_blank" rel="noopener" class="card__repo-name">
-          <span class="lang-dot lang-dot--notebook"></span> flood-risk-prediction
-        </a>
+
+        <div class="card__tags">
+          <span>GOWA Automation</span><span>Cloudflare Workers &amp; Pages</span><span>Supabase</span><span>WhatsApp API</span>
+        </div>
+        <div class="card__footer">
+          <a href="https://github.com/farisrizqi/todo-wa" target="_blank" rel="noopener" class="card__repo-name">
+            <span class="lang-dot lang-dot--js"></span> farisrizqi/todo-wa
+          </a>
+          <button type="button" class="card__output-btn" data-project="todowa">Detail Output ↗</button>
+        </div>
       </article>
 
-      <article class="card">
+      <!-- PROJECT 2: TRIPTAKTIK -->
+      <article class="card" data-category="ml">
         <div class="card__top">
           <div class="card__icon">
             <svg viewBox="0 0 48 48" fill="none"><circle cx="12" cy="14" r="4" stroke="currentColor" stroke-width="1.6"/><circle cx="36" cy="14" r="4" stroke="currentColor" stroke-width="1.6"/><circle cx="24" cy="36" r="4" stroke="currentColor" stroke-width="1.6"/><path d="M14.8 17l6.4 15.5M33.2 17l-6.4 15.5M16 14h16" stroke="currentColor" stroke-width="1.6"/></svg>
@@ -268,17 +612,98 @@
             <svg width="17" height="17" viewBox="0 0 24 24" fill="none"><path d="M12 2C6.5 2 2 6.6 2 12.2c0 4.5 2.9 8.3 6.8 9.6.5.1.7-.2.7-.5v-1.9c-2.8.6-3.4-1.4-3.4-1.4-.4-1.1-1.1-1.4-1.1-1.4-.9-.6.1-.6.1-.6 1 .1 1.5 1.1 1.5 1.1.9 1.5 2.3 1.1 2.8.8.1-.7.3-1.1.6-1.4-2.2-.3-4.6-1.1-4.6-5 0-1.1.4-2 1-2.7-.1-.3-.5-1.3.1-2.7 0 0 .8-.3 2.8 1a9.6 9.6 0 015.1 0c2-1.3 2.8-1 2.8-1 .6 1.4.2 2.4.1 2.7.6.7 1 1.6 1 2.7 0 3.9-2.4 4.7-4.6 5 .3.3.6.9.6 1.8v2.6c0 .3.2.6.7.5 3.9-1.3 6.8-5.1 6.8-9.6C22 6.6 17.5 2 12 2z" fill="currentColor"/></svg>
           </a>
         </div>
-        <h3>Sistem Rekomendasi Wisata Jogja "TripTaktik"</h3>
-        <p>Model rekomendasi wisata menggunakan arsitektur <strong>Siamese Network</strong>, di-deploy dalam format <strong>.tflite</strong> agar dapat diintegrasikan langsung ke website. Proyek capstone kelompok pada Coding Camp DBS Foundation.</p>
-        <div class="card__tags">
-          <span>Siamese Network</span><span>TensorFlow Lite</span><span>Recommender System</span>
+        <div class="card__badge">Siamese Network · TensorFlow Lite (.tflite)</div>
+        <h3>Sistem Rekomendasi Pariwisata &ldquo;TripTaktik&rdquo;</h3>
+        <p>Sistem rekomendasi destinasi wisata berbasis arsitektur <strong>Siamese Network</strong> yang mencocokkan preferensi pengguna dengan destinasi paling relevan, kemudian dioptimalkan ke format <strong>.tflite</strong> agar ringan saat diintegrasikan ke situs web.</p>
+
+        <!-- Embedded Output Preview -->
+        <div class="output-preview">
+          <div class="output-preview__bar">
+            <span class="output-dot output-dot--ochre"></span>
+            <span>Contoh Output: Inferensi Model .tflite</span>
+            <span class="output-preview__wm">FarDev Automation</span>
+          </div>
+          <div class="output-preview__content">
+            <div class="mini-metrics">
+              <div class="mini-metric-row">
+                <span>1. Tebing Breksi (Alam/Budaya)</span>
+                <strong class="score-pill">96.4% Match</strong>
+              </div>
+              <div class="mini-metric-row">
+                <span>2. Hutan Pinus Mangunan</span>
+                <strong class="score-pill">94.1% Match</strong>
+              </div>
+              <div class="mini-metric-row">
+                <span>3. HeHa Sky View</span>
+                <strong class="score-pill">91.8% Match</strong>
+              </div>
+            </div>
+          </div>
         </div>
-        <a href="https://github.com/farisrizqi/model-rekomendasi-jogja-submission-faris" target="_blank" rel="noopener" class="card__repo-name">
-          <span class="lang-dot lang-dot--notebook"></span> model-rekomendasi-jogja-submission-faris
-        </a>
+
+        <div class="card__tags">
+          <span>Siamese Network</span><span>TensorFlow Lite</span><span>Recommender System</span><span>Python</span>
+        </div>
+        <div class="card__footer">
+          <a href="https://github.com/farisrizqi/model-rekomendasi-jogja-submission-faris" target="_blank" rel="noopener" class="card__repo-name">
+            <span class="lang-dot lang-dot--notebook"></span> model-rekomendasi-jogja
+          </a>
+          <button type="button" class="card__output-btn" data-project="triptaktik">Detail Output ↗</button>
+        </div>
       </article>
 
-      <article class="card">
+      <!-- PROJECT 3: FLOOD RISK PREDICTION -->
+      <article class="card" data-category="ml">
+        <div class="card__top">
+          <div class="card__icon">
+            <svg viewBox="0 0 48 48" fill="none"><path d="M4,30 C10,26 14,32 20,28 C26,24 30,30 36,26 C39,24 42,25 44,24" stroke="currentColor" stroke-width="1.6"/><path d="M4,36 C10,32 14,38 20,34 C26,30 30,36 36,32 C39,30 42,31 44,30" stroke="currentColor" stroke-width="1.6"/><path d="M18 12l4-6 4 6M22 6v14" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+          </div>
+          <a href="https://github.com/farisrizqi/flood-risk-prediction" target="_blank" rel="noopener" class="card__repo-link" aria-label="Buka repository di GitHub">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none"><path d="M12 2C6.5 2 2 6.6 2 12.2c0 4.5 2.9 8.3 6.8 9.6.5.1.7-.2.7-.5v-1.9c-2.8.6-3.4-1.4-3.4-1.4-.4-1.1-1.1-1.4-1.1-1.4-.9-.6.1-.6.1-.6 1 .1 1.5 1.1 1.5 1.1.9 1.5 2.3 1.1 2.8.8.1-.7.3-1.1.6-1.4-2.2-.3-4.6-1.1-4.6-5 0-1.1.4-2 1-2.7-.1-.3-.5-1.3.1-2.7 0 0 .8-.3 2.8 1a9.6 9.6 0 015.1 0c2-1.3 2.8-1 2.8-1 .6 1.4.2 2.4.1 2.7.6.7 1 1.6 1 2.7 0 3.9-2.4 4.7-4.6 5 .3.3.6.9.6 1.8v2.6c0 .3.2.6.7.5 3.9-1.3 6.8-5.1 6.8-9.6C22 6.6 17.5 2 12 2z" fill="currentColor"/></svg>
+          </a>
+        </div>
+        <div class="card__badge">88 Desa Spasial · LSTM + GEE + QGIS</div>
+        <h3>Prediksi Risiko Banjir (Deep Learning / LSTM)</h3>
+        <p>Membangun model prediksi risiko banjir berbasis <strong>LSTM</strong> yang mencakup 88 desa, memadukan data iklim time-series dari <strong>Google Earth Engine</strong> dengan ekstraksi topografi spasial melalui <strong>QGIS</strong> untuk mendukung peringatan dini yang lebih akurat.</p>
+
+        <!-- Embedded Output Preview -->
+        <div class="output-preview">
+          <div class="output-preview__bar">
+            <span class="output-dot output-dot--green"></span>
+            <span>Contoh Output: Prediksi Spasial 88 Desa</span>
+            <span class="output-preview__wm">FarDev Automation</span>
+          </div>
+          <div class="output-preview__content">
+            <div class="mini-metrics">
+              <div class="mini-metric-row">
+                <span>Desa Sriharjo (Curah Hujan 142mm)</span>
+                <strong class="risk-pill risk-pill--high">Risiko Tinggi (0.89)</strong>
+              </div>
+              <div class="mini-metric-row">
+                <span>Desa Trimulyo (TWI 14.2 · Elev 45m)</span>
+                <strong class="risk-pill risk-pill--med">Risiko Sedang (0.54)</strong>
+              </div>
+              <div class="mini-metric-row">
+                <span>Desa Dlingo (Elev 310m · Lereng 18°)</span>
+                <strong class="risk-pill risk-pill--low">Risiko Rendah (0.12)</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card__tags">
+          <span>LSTM Deep Learning</span><span>Google Earth Engine</span><span>QGIS</span><span>Spatial Analysis</span>
+        </div>
+        <div class="card__footer">
+          <a href="https://github.com/farisrizqi/flood-risk-prediction" target="_blank" rel="noopener" class="card__repo-name">
+            <span class="lang-dot lang-dot--notebook"></span> flood-risk-prediction
+          </a>
+          <button type="button" class="card__output-btn" data-project="flood">Detail Output ↗</button>
+        </div>
+      </article>
+
+      <!-- PROJECT 4: TOUR FLORA -->
+      <article class="card" data-category="web">
         <div class="card__top">
           <div class="card__icon">
             <svg viewBox="0 0 48 48" fill="none"><rect x="8" y="8" width="10" height="10" stroke="currentColor" stroke-width="1.6"/><rect x="30" y="8" width="10" height="10" stroke="currentColor" stroke-width="1.6"/><rect x="8" y="30" width="10" height="10" stroke="currentColor" stroke-width="1.6"/><path d="M30 30h4v4h-4zM38 30h2v2h-2zM30 38h2v2h-2zM36 36h4v4h-4z" fill="currentColor"/></svg>
@@ -287,172 +712,287 @@
             <svg width="17" height="17" viewBox="0 0 24 24" fill="none"><path d="M12 2C6.5 2 2 6.6 2 12.2c0 4.5 2.9 8.3 6.8 9.6.5.1.7-.2.7-.5v-1.9c-2.8.6-3.4-1.4-3.4-1.4-.4-1.1-1.1-1.4-1.1-1.4-.9-.6.1-.6.1-.6 1 .1 1.5 1.1 1.5 1.1.9 1.5 2.3 1.1 2.8.8.1-.7.3-1.1.6-1.4-2.2-.3-4.6-1.1-4.6-5 0-1.1.4-2 1-2.7-.1-.3-.5-1.3.1-2.7 0 0 .8-.3 2.8 1a9.6 9.6 0 015.1 0c2-1.3 2.8-1 2.8-1 .6 1.4.2 2.4.1 2.7.6.7 1 1.6 1 2.7 0 3.9-2.4 4.7-4.6 5 .3.3.6.9.6 1.8v2.6c0 .3.2.6.7.5 3.9-1.3 6.8-5.1 6.8-9.6C22 6.6 17.5 2 12 2z" fill="currentColor"/></svg>
           </a>
         </div>
-        <h3>Katalog Digital Botani "Tour Flora"</h3>
-        <p>Website informasi botani desa yang terintegrasi dengan pemindaian <strong>QR Code</strong> untuk digitalisasi flora lokal — dikembangkan dalam program KKN Universitas Ahmad Dahlan.</p>
-        <div class="card__tags">
-          <span>Web Development</span><span>QR Code</span><span>Digitalisasi</span>
+        <div class="card__badge">QR Code Scan · Digitalisasi Edukasi</div>
+        <h3>Katalog Botani Digital (Tour Flora)</h3>
+        <p>Merancang katalog botani digital berbasis situs web yang memungkinkan pengunjung memindai <strong>QR Code</strong> di lapangan (SMP N 2 Patuk &amp; lingkungan desa) untuk langsung mempelajari taksonomi, morfologi, dan manfaat flora lokal.</p>
+
+        <!-- Embedded Output Preview -->
+        <div class="output-preview">
+          <div class="output-preview__bar">
+            <span class="output-dot output-dot--ochre"></span>
+            <span>Contoh Output: Kartu Spesies via Scan QR</span>
+            <span class="output-preview__wm">FarDev Automation</span>
+          </div>
+          <div class="output-preview__content">
+            <div class="mini-wa">
+              <strong>🌿 Tectona grandis (Pohon Jati)</strong>
+              <p>Famili: <em>Lamiaceae</em> · Status: Tanaman Keras Konservasi · Dilengkapi audio pelafalan ilmiah &amp; peta titik tanam.</p>
+              <span class="mini-wa__meta">QR Triggered · Mobile-First Web View</span>
+            </div>
+          </div>
         </div>
-        <a href="https://github.com/farisrizqi/flora-kkn-uad-2026" target="_blank" rel="noopener" class="card__repo-name">
-          <span class="lang-dot lang-dot--web"></span> flora-kkn-uad-2026
-        </a>
+
+        <div class="card__tags">
+          <span>Web Development</span><span>QR Code Integration</span><span>Digitalisasi</span><span>HTML/CSS/JS</span>
+        </div>
+        <div class="card__footer">
+          <a href="https://github.com/farisrizqi/flora-kkn-uad-2026" target="_blank" rel="noopener" class="card__repo-name">
+            <span class="lang-dot lang-dot--web"></span> flora-kkn-uad-2026
+          </a>
+          <button type="button" class="card__output-btn" data-project="flora">Detail Output ↗</button>
+        </div>
       </article>
 
     </div>
 
-    <!-- ============ REPO SHOWCASE ============ -->
+    <!-- ============ REPO SHOWCASE (WITH LIVE GITHUB SYNC) ============ -->
     <div class="repo-showcase">
-      <p class="repo-showcase__label">Latihan &amp; submission lain di GitHub</p>
-      <div class="repo-list">
+      <div class="repo-showcase__header">
+        <p class="repo-showcase__label">Repositori &amp; Eksperimen Terbaru di GitHub (@farisrizqi)</p>
+        <span class="repo-sync-status" id="repoSyncStatus">✓ Sinkron dengan GitHub</span>
+      </div>
+      <div class="repo-list" id="repoList">
 
-        <a href="https://github.com/farisrizqi/Submission-DBS-CNN-Faris" target="_blank" rel="noopener" class="repo-item">
+        <a href="https://github.com/farisrizqi/freight-rate-prediction" target="_blank" rel="noopener" class="repo-item" data-category="ml">
+          <span class="lang-dot lang-dot--notebook"></span>
+          <span class="repo-item__name">freight-rate-prediction</span>
+          <span class="repo-item__lang">Jupyter Notebook · ML Regression</span>
+          <span class="repo-item__date">Agu 2026</span>
+        </a>
+
+        <a href="https://github.com/farisrizqi/todo-wa" target="_blank" rel="noopener" class="repo-item" data-category="automation">
+          <span class="lang-dot lang-dot--js"></span>
+          <span class="repo-item__name">todo-wa</span>
+          <span class="repo-item__lang">JavaScript · GOWA &amp; Cloudflare</span>
+          <span class="repo-item__date">Okt 2026</span>
+        </a>
+
+        <a href="https://github.com/farisrizqi/etl-pipeline-submission-dbs" target="_blank" rel="noopener" class="repo-item" data-category="automation">
+          <span class="lang-dot lang-dot--python"></span>
+          <span class="repo-item__name">etl-pipeline-submission-dbs</span>
+          <span class="repo-item__lang">Python · Automated ETL Pipeline</span>
+          <span class="repo-item__date">Mei 2025</span>
+        </a>
+
+        <a href="https://github.com/farisrizqi/machine-learning-terapan-submission" target="_blank" rel="noopener" class="repo-item" data-category="ml">
+          <span class="lang-dot lang-dot--notebook"></span>
+          <span class="repo-item__name">machine-learning-terapan-submission</span>
+          <span class="repo-item__lang">Jupyter Notebook · Applied ML</span>
+          <span class="repo-item__date">Mei 2025</span>
+        </a>
+
+        <a href="https://github.com/farisrizqi/Submission-DBS-CNN-Faris" target="_blank" rel="noopener" class="repo-item" data-category="ml">
           <span class="lang-dot lang-dot--notebook"></span>
           <span class="repo-item__name">Submission-DBS-CNN-Faris</span>
-          <span class="repo-item__lang">Jupyter Notebook</span>
+          <span class="repo-item__lang">Jupyter Notebook · Deep Learning CNN</span>
           <span class="repo-item__date">Apr 2025</span>
         </a>
 
-        <a href="https://github.com/farisrizqi/machine-learning-terapan-submission" target="_blank" rel="noopener" class="repo-item">
-          <span class="lang-dot lang-dot--notebook"></span>
-          <span class="repo-item__name">machine-learning-terapan-submission</span>
-          <span class="repo-item__lang">Jupyter Notebook</span>
-          <span class="repo-item__date">Mei 2025</span>
-        </a>
-
-        <a href="https://github.com/farisrizqi/etl-pipeline-submission-dbs" target="_blank" rel="noopener" class="repo-item">
+        <a href="https://github.com/farisrizqi/Responsi-Visdat-v2" target="_blank" rel="noopener" class="repo-item" data-category="web">
           <span class="lang-dot lang-dot--python"></span>
-          <span class="repo-item__name">etl-pipeline-submission-dbs</span>
-          <span class="repo-item__lang">Python</span>
-          <span class="repo-item__date">Mei 2025</span>
-        </a>
-
-        <a href="https://github.com/farisrizqi/Responsi-Visdat" target="_blank" rel="noopener" class="repo-item">
-          <span class="lang-dot lang-dot--ts"></span>
-          <span class="repo-item__name">Responsi-Visdat</span>
-          <span class="repo-item__lang">TypeScript</span>
+          <span class="repo-item__name">Responsi-Visdat-v2</span>
+          <span class="repo-item__lang">Python · Visualisasi Data</span>
           <span class="repo-item__date">Jul 2025</span>
         </a>
 
-        <a href="https://github.com/farisrizqi/Responsi-Visdat-v2" target="_blank" rel="noopener" class="repo-item">
+        <a href="https://github.com/farisrizqi/Responsi-Visdat" target="_blank" rel="noopener" class="repo-item" data-category="web">
           <span class="lang-dot lang-dot--ts"></span>
-          <span class="repo-item__name">Responsi-Visdat-v2</span>
-          <span class="repo-item__lang">Visualisasi Data</span>
+          <span class="repo-item__name">Responsi-Visdat</span>
+          <span class="repo-item__lang">TypeScript · Data Dashboard</span>
+          <span class="repo-item__date">Jul 2025</span>
         </a>
 
-        <a href="https://github.com/farisrizqi/Proyek-Visualisasi-Data-Responsi" target="_blank" rel="noopener" class="repo-item">
-          <span class="lang-dot lang-dot--notebook"></span>
-          <span class="repo-item__name">Proyek-Visualisasi-Data-Responsi</span>
-          <span class="repo-item__lang">Visualisasi Data</span>
-        </a>
-
-        <a href="https://github.com/farisrizqi/Proyek_visdat_Submission_DBS" target="_blank" rel="noopener" class="repo-item">
-          <span class="lang-dot lang-dot--notebook"></span>
-          <span class="repo-item__name">Proyek_visdat_Submission_DBS</span>
-          <span class="repo-item__lang">Jupyter Notebook</span>
-          <span class="repo-item__date">Mar 2025</span>
-        </a>
-
-        <a href="https://github.com/farisrizqi/Proyek_VisDat_DBS_Submission" target="_blank" rel="noopener" class="repo-item">
-          <span class="lang-dot lang-dot--notebook"></span>
-          <span class="repo-item__name">Proyek_VisDat_DBS_Submission</span>
-          <span class="repo-item__lang">Jupyter Notebook</span>
-          <span class="repo-item__date">Mar 2025</span>
+        <a href="https://github.com/farisrizqi/RoomDatabase_Mobile" target="_blank" rel="noopener" class="repo-item" data-category="web">
+          <span class="lang-dot lang-dot--web"></span>
+          <span class="repo-item__name">RoomDatabase_Mobile</span>
+          <span class="repo-item__lang">Kotlin · SQLite Android</span>
+          <span class="repo-item__date">Jan 2025</span>
         </a>
 
       </div>
     </div>
   </section>
 
-  <!-- ============ SKILLS ============ -->
+  <!-- ============ 05. SKILLS ============ -->
   <section class="section skills" id="skills">
     <div class="section__head">
-      <span class="section__num">04</span>
-      <h2 class="section__title">Keahlian</h2>
+      <span class="section__num">05</span>
+      <h2 class="section__title">Keterampilan Teknis &amp; Perangkat Lunak</h2>
     </div>
 
     <div class="skills__grid">
       <div class="skill-group">
-        <h3>Hard Skill</h3>
+        <h3>AI &amp; Workflow Automation</h3>
         <div class="tags">
-          <span>System Automation (n8n)</span>
-          <span>Machine Learning</span>
-          <span>Deep Learning — LSTM, RNN, CNN</span>
-          <span>Data Visualization</span>
-          <span>Software Development</span>
-          <span>Recommender Systems</span>
-          <span>ETL</span>
+          <span class="tag--highlight">Workflow Automation (n8n Advanced)</span>
+          <span class="tag--highlight">REST API &amp; Webhook Integration</span>
+          <span class="tag--highlight">Multi-SaaS Automation (Kledo, Odoo, Zenoti, Mekari)</span>
+          <span class="tag--highlight">Self-Hosted Deployment (Docker/Linux)</span>
+          <span class="tag--highlight">Agentic AI / AI Agent</span>
+          <span class="tag--highlight">Model Context Protocol (Pre-built &amp; Custom MCP)</span>
+          <span>OpenRouter &amp; Hermes Orchestration</span>
+          <span>GOWA (WhatsApp Automation)</span>
           <span>Prompt Engineering</span>
-          <span>Microsoft Office</span>
+          <span>Extract Transform Load (ETL)</span>
         </div>
       </div>
 
       <div class="skill-group">
-        <h3>Software &amp; Tools</h3>
+        <h3>ML, Data &amp; Software Engineering</h3>
         <div class="tags">
-          <span>Python</span><span>TensorFlow</span><span>Keras</span><span>PyTorch</span>
-          <span>Scikit-Learn</span><span>MySQL / PostgreSQL</span><span>Streamlit</span>
-          <span>Git &amp; GitHub</span><span>Power BI / Tableau</span><span>Linux (Ubuntu/Debian)</span>
-          <span>Google Colab</span><span>Kaggle Notebook</span><span>VS Code</span><span>Google Workspace</span>
+          <span>Machine Learning &amp; Deep Learning (LSTM, RNN, CNN)</span>
+          <span>Sistem Rekomendasi (Siamese Network)</span>
+          <span>TensorFlow / Keras / TFLite</span>
+          <span>PyTorch &amp; Scikit-Learn</span>
+          <span>Visualisasi Data (Power BI / Tableau / Streamlit)</span>
+          <span>Python &amp; JavaScript / TypeScript</span>
+          <span>Cloudflare Workers &amp; Pages</span>
+          <span>Supabase &amp; MySQL / PostgreSQL</span>
+          <span>Google Cloud Platform (GCP)</span>
+          <span>Antigravity IDE &amp; VS Code</span>
+          <span>Git &amp; GitHub</span>
+          <span>Google Colab &amp; Kaggle Notebook</span>
         </div>
       </div>
 
       <div class="skill-group">
-        <h3>Nonteknis</h3>
+        <h3>Keterampilan Non-Teknis</h3>
         <div class="tags">
-          <span>Public Speaking</span><span>Time Management</span><span>Disiplin dan Teliti</span>
-          <span>Kerjasama Tim</span><span>Problem Solving</span><span>Percaya Diri</span>
+          <span>Public Speaking</span>
+          <span>Manajemen Waktu</span>
+          <span>Disiplin &amp; Teliti</span>
+          <span>Kerja Tim</span>
+          <span>Pemecahan Masalah (Problem Solving)</span>
+          <span>Percaya Diri</span>
+          <span>Komunikasi Klien &amp; Onboarding</span>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ============ CERTIFICATIONS ============ -->
+  <!-- ============ 06. CERTIFICATIONS ============ -->
   <section class="section certs" id="certs">
     <div class="section__head">
-      <span class="section__num">05</span>
+      <span class="section__num">06</span>
       <h2 class="section__title">Sertifikasi &amp; Pelatihan</h2>
     </div>
 
     <div class="cert-list">
-      <div class="cert-item"><span class="cert-item__date">20 Feb 2025</span><span>Belajar Dasar Visualisasi Data</span></div>
-      <div class="cert-item"><span class="cert-item__date">21 Feb 2025</span><span>Belajar Dasar Structured Query Language (SQL)</span></div>
-      <div class="cert-item"><span class="cert-item__date">03 Mar 2025</span><span>Belajar Dasar AI</span></div>
-      <div class="cert-item"><span class="cert-item__date">11 Mar 2025</span><span>Belajar Analisis Data dengan Python</span></div>
-      <div class="cert-item"><span class="cert-item__date">28 Apr 2025</span><span>Belajar Pengembangan Machine Learning</span></div>
-      <div class="cert-item"><span class="cert-item__date">19 Mei 2025</span><span>Belajar Fundamental Pemrosesan Data</span></div>
-      <div class="cert-item"><span class="cert-item__date">27 Mei 2025</span><span>AI Praktis untuk Produktivitas</span></div>
-      <div class="cert-item"><span class="cert-item__date">02 Jun 2025</span><span>Machine Learning Terapan</span></div>
-      <div class="cert-item"><span class="cert-item__date">09 Jun 2025</span><span>Belajar Penggunaan Generative AI</span></div>
-      <div class="cert-item"><span class="cert-item__date">09 Jul 2025</span><span>English for Business Communication</span></div>
+      <div class="cert-item">
+        <span class="cert-item__date">09 Jul 2025</span>
+        <div class="cert-item__detail">
+          <span class="cert-item__name">Bahasa Inggris untuk Komunikasi Bisnis (English for Business Communication)</span>
+          <span class="cert-provider">DBS Foundation</span>
+        </div>
+      </div>
+      <div class="cert-item">
+        <span class="cert-item__date">09 Jun 2025</span>
+        <div class="cert-item__detail">
+          <span class="cert-item__name">Penggunaan Generative AI</span>
+          <span class="cert-provider">Dicoding Academy</span>
+        </div>
+      </div>
+      <div class="cert-item">
+        <span class="cert-item__date">02 Jun 2025</span>
+        <div class="cert-item__detail">
+          <span class="cert-item__name">Penerapan Machine Learning (Machine Learning Terapan)</span>
+          <span class="cert-provider">Dicoding / DBS Foundation</span>
+        </div>
+      </div>
+      <div class="cert-item">
+        <span class="cert-item__date">27 Mei 2025</span>
+        <div class="cert-item__detail">
+          <span class="cert-item__name">AI Praktis untuk Produktivitas</span>
+          <span class="cert-provider">Dicoding Academy</span>
+        </div>
+      </div>
+      <div class="cert-item">
+        <span class="cert-item__date">19 Mei 2025</span>
+        <div class="cert-item__detail">
+          <span class="cert-item__name">Dasar-Dasar Pemrosesan Data (Fundamental Pemrosesan Data)</span>
+          <span class="cert-provider">Dicoding Academy</span>
+        </div>
+      </div>
+      <div class="cert-item">
+        <span class="cert-item__date">28 Apr 2025</span>
+        <div class="cert-item__detail">
+          <span class="cert-item__name">Pengembangan Machine Learning</span>
+          <span class="cert-provider">Dicoding Academy</span>
+        </div>
+      </div>
+      <div class="cert-item">
+        <span class="cert-item__date">11 Mar 2025</span>
+        <div class="cert-item__detail">
+          <span class="cert-item__name">Analisis Data dengan Python</span>
+          <span class="cert-provider">Dicoding Academy</span>
+        </div>
+      </div>
+      <div class="cert-item">
+        <span class="cert-item__date">03 Mar 2025</span>
+        <div class="cert-item__detail">
+          <span class="cert-item__name">Dasar-Dasar AI</span>
+          <span class="cert-provider">Dicoding Academy</span>
+        </div>
+      </div>
+      <div class="cert-item">
+        <span class="cert-item__date">21 Feb 2025</span>
+        <div class="cert-item__detail">
+          <span class="cert-item__name">Dasar-Dasar Structured Query Language (SQL)</span>
+          <span class="cert-provider">Dicoding Academy</span>
+        </div>
+      </div>
+      <div class="cert-item">
+        <span class="cert-item__date">20 Feb 2025</span>
+        <div class="cert-item__detail">
+          <span class="cert-item__name">Dasar-Dasar Visualisasi Data</span>
+          <span class="cert-provider">Dicoding Academy</span>
+        </div>
+      </div>
     </div>
   </section>
 
-  <!-- ============ ORGANIZATION ============ -->
+  <!-- ============ 07. ORGANIZATION ============ -->
   <section class="section org" id="org">
     <div class="section__head">
-      <span class="section__num">06</span>
-      <h2 class="section__title">Organisasi &amp; Kepanitiaan</h2>
+      <span class="section__num">07</span>
+      <h2 class="section__title">Pengalaman Organisasi &amp; Kepanitiaan</h2>
     </div>
 
     <div class="org-list">
-      <div class="org-item"><span class="org-item__date">Sep 2024</span><span class="org-item__role">Div. Perlengkapan</span><span class="org-item__name">Ospek P2K Pusat, Universitas Ahmad Dahlan</span></div>
-      <div class="org-item"><span class="org-item__date">Agu 2024</span><span class="org-item__role">Koor. Div. Perlengkapan</span><span class="org-item__name">ICOM 2024 — Informatics Competition</span></div>
-      <div class="org-item"><span class="org-item__date">Mar 2024</span><span class="org-item__role">Koor. Div. Perlengkapan</span><span class="org-item__name">MU'ARIF 2024 — Musabaqah Ramadhan Informatika</span></div>
-      <div class="org-item"><span class="org-item__date">Sep 2023</span><span class="org-item__role">Div. Pendamping</span><span class="org-item__name">Ospek P2K, Fakultas Teknologi Industri UAD</span></div>
-      <div class="org-item"><span class="org-item__date">2022–2023</span><span class="org-item__role">Staff Departemen Kaderisasi</span><span class="org-item__name">Himpunan Mahasiswa Informatika (HMIF)</span></div>
-      <div class="org-item"><span class="org-item__date">2020–2021</span><span class="org-item__role">Ketua</span><span class="org-item__name">VACHERA — Siswa Pencinta Alam</span></div>
-      <div class="org-item"><span class="org-item__date">2018–Sekarang</span><span class="org-item__role">Anggota</span><span class="org-item__name">RISMA Masjid An-Nur</span></div>
+      <div class="org-item"><span class="org-item__date">Sep 2024</span><span class="org-item__role">Divisi Logistik</span><span class="org-item__name">Ospek P2K Universitas Ahmad Dahlan (Pusat)</span></div>
+      <div class="org-item"><span class="org-item__date">Agu 2024</span><span class="org-item__role">Koordinator Divisi Logistik</span><span class="org-item__name">ICOM 2024 (Kompetisi Informatika)</span></div>
+      <div class="org-item"><span class="org-item__date">Mar 2024</span><span class="org-item__role">Koordinator Divisi Logistik</span><span class="org-item__name">MU'ARIF 2024 (Kompetisi Informatika Ramadhan)</span></div>
+      <div class="org-item"><span class="org-item__date">Sep 2023</span><span class="org-item__role">Divisi Mentoring</span><span class="org-item__name">Ospek P2K Fakultas Teknologi Industri, UAD</span></div>
+      <div class="org-item"><span class="org-item__date">2022–2023</span><span class="org-item__role">Staf, Dep. Pengembangan Kader</span><span class="org-item__name">Himpunan Mahasiswa Informatika (HMIF)</span></div>
+      <div class="org-item"><span class="org-item__date">2020–2021</span><span class="org-item__role">Ketua</span><span class="org-item__name">VACHERA (Kelompok Siswa Pecinta Alam)</span></div>
+      <div class="org-item"><span class="org-item__date">2018–Sekarang</span><span class="org-item__role">Anggota</span><span class="org-item__name">Remaja Masjid An-Nur (RISMA)</span></div>
     </div>
   </section>
 
   <!-- ============ CONTACT ============ -->
   <section class="section contact" id="contact">
+    <div class="contact__watermark" aria-hidden="true">FARDEV AUTOMATION</div>
     <div class="contact__inner">
+      <div class="contact__brand-pill">
+        <img src="assets/fardev-logo.png" alt="FarDev Automation">
+      </div>
       <p class="eyebrow eyebrow--light">Terbuka untuk peluang kerja &amp; kolaborasi</p>
-      <h2 class="contact__title">Mari mulai<br>percakapan.</h2>
-      <a href="mailto:farisnur07@gmail.com" class="contact__email">farisnur07@gmail.com</a>
+      <h2 class="contact__title">Mari bangun sistem<br>yang bekerja.</h2>
+      
+      <button type="button" class="contact__email-btn" data-copy="farisnur07@gmail.com" title="Klik untuk salin email">
+        <span class="contact__email">farisnur07@gmail.com</span>
+        <span class="contact__copy-tip">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><rect x="9" y="9" width="13" height="13" rx="2" stroke="currentColor" stroke-width="1.8"/><path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1" stroke="currentColor" stroke-width="1.8"/></svg>
+          Klik untuk salin email
+        </span>
+      </button>
 
       <div class="contact__row">
-        <a href="tel:+6289506982507" class="chip chip--light">089506982507</a>
+        <button type="button" class="chip chip--light chip--copy" data-copy="+6289506982507" title="Klik untuk salin nomor WhatsApp / Telepon">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z" stroke="currentColor" stroke-width="1.6"/></svg>
+          <span>+62 895-0698-2507</span>
+          <span class="copy-badge">Salin</span>
+        </button>
         <a href="https://www.linkedin.com/in/farisrizqiawan07/" target="_blank" rel="noopener" class="chip chip--light">LinkedIn</a>
         <a href="https://github.com/farisrizqi" target="_blank" rel="noopener" class="chip chip--light">GitHub</a>
         <a href="https://www.instagram.com/farisrizqiawan_" target="_blank" rel="noopener" class="chip chip--light">Instagram</a>
@@ -464,8 +1004,52 @@
 </main>
 
 <footer class="footer">
-  <span>© 2026 Faris Nur Rizqiawan</span>
+  <span>© 2026 FarDev Automation — Faris Nur Rizqiawan</span>
+  <span>AI Engineer &amp; Automation Specialist</span>
 </footer>
+
+<!-- Project Output Detail Modal -->
+<div class="output-modal" id="outputModal" aria-hidden="true" role="dialog" aria-modal="true">
+  <div class="output-modal__backdrop" id="outputModalBackdrop"></div>
+  <div class="output-modal__dialog">
+    <div class="output-modal__header">
+      <div>
+        <span class="output-modal__eyebrow" id="modalEyebrow">CONTOH OUTPUT PROYEK // FARDEV AUTOMATION</span>
+        <h3 class="output-modal__title" id="modalTitle">Judul Proyek</h3>
+      </div>
+      <button type="button" class="output-modal__close" id="modalCloseBtn" aria-label="Tutup modal">✕</button>
+    </div>
+    <div class="output-modal__body" id="modalBody">
+      <!-- Populated dynamically via script.js -->
+    </div>
+    <div class="output-modal__footer">
+      <div class="output-modal__repo-meta">
+        <span class="output-modal__repo-label">SOURCE REPOSITORY</span>
+        <code id="modalRepoName">farisrizqi/todo-wa</code>
+      </div>
+      <div class="output-modal__actions">
+        <a href="#" target="_blank" rel="noopener" class="btn btn--ghost output-modal__live-btn" id="modalLiveLink" hidden>
+          <span>Lihat Live Web ↗</span>
+        </a>
+        <a href="https://github.com/farisrizqi" target="_blank" rel="noopener" class="btn btn--primary output-modal__repo-btn" id="modalRepoLink">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M12 2C6.5 2 2 6.6 2 12.2c0 4.5 2.9 8.3 6.8 9.6.5.1.7-.2.7-.5v-1.9c-2.8.6-3.4-1.4-3.4-1.4-.4-1.1-1.1-1.4-1.1-1.4-.9-.6.1-.6.1-.6 1 .1 1.5 1.1 1.5 1.1.9 1.5 2.3 1.1 2.8.8.1-.7.3-1.1.6-1.4-2.2-.3-4.6-1.1-4.6-5 0-1.1.4-2 1-2.7-.1-.3-.5-1.3.1-2.7 0 0 .8-.3 2.8 1a9.6 9.6 0 015.1 0c2-1.3 2.8-1 2.8-1 .6 1.4.2 2.4.1 2.7.6.7 1 1.6 1 2.7 0 3.9-2.4 4.7-4.6 5 .3.3.6.9.6 1.8v2.6c0 .3.2.6.7.5 3.9-1.3 6.8-5.1 6.8-9.6C22 6.6 17.5 2 12 2z" fill="currentColor"/></svg>
+          <span>Buka Repo di GitHub ↗</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Floating Back to Top Button -->
+<button class="back-to-top" id="backToTop" aria-label="Kembali ke atas" title="Kembali ke atas">
+  <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M12 19V5M5 12l7-7 7 7" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+
+<!-- Toast Notification -->
+<div class="toast" id="toast" role="status" aria-live="polite">
+  <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  <span id="toastMsg">Tersalin ke papan klip!</span>
+</div>
 
 <script src="script.js"></script>
 </body>
